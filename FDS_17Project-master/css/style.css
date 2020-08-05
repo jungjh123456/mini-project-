@@ -538,7 +538,7 @@ figcaption div::after {
   background-position: 600px 60px;
   background-size: 1000px;
   background-attachment: scroll;
-  animation: newsanime 2s forwards;
+  animation: newsanime 2s 1s forwards;
 }
 .news__heading {
   padding-top: 80px;
@@ -577,9 +577,117 @@ figcaption div::after {
   0% {
     opacity: 0;
     background-image: url("../starbuximg/summer2_reserve_bean.png");
+   
   }
   100% {
     opacity: 1;
     background-image: url("../starbuximg/summer2_reserve_bean.png");
+  
+  }
+}
+
+.favorite {
+  background-image: url('../starbuximg/fav_prod_bg_new.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  height: 800px;
+  padding:70px;
+  background-repeat: no-repeat;
+ 
+}
+.favorite__heading {
+
+  padding-left: 80px;
+
+  color: #eee;
+  animation: adanime1 2s;
+}
+.favorite__heading span:nth-child(1){
+
+  font-size: 10rem;
+  font-weight: 700;
+  text-align: right;
+  
+
+}
+.sp {
+  letter-spacing: 11px;
+
+}
+.favorite__heading span:nth-child(2) {
+  font-size: 5rem;
+  letter-spacing: 7px;
+ 
+}
+
+.favorite h2 span{
+  display: block;
+  width: 250px;
+  
+}
+.favorite__paragraph {
+  margin-top: 50px;
+  color: #eee;
+  margin-bottom: 10px;
+  animation: adanime1 3s;
+  
+}
+.favorite__paragraph span{
+  display: block;
+  font-weight: 500;
+  font-size: 2.5rem;
+ 
+}
+.favorite__subParagraph {
+  animation: adanime1 3s;
+}
+
+.favorite__subParagraph span {
+  display: block;
+  color: #eee;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.favorite__group {
+  float: left;
+  text-align: right;
+ 
+}
+.favorite__img {
+  float: right;
+  transform: translateX(150px);
+}
+
+.favorite__link {
+  display: flex;
+  color: #eee;
+
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-top: 40px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: 1s;
+  /* opacity: 0; */
+  animation: opacpyAny 1s ease-in-out;
+}
+
+.favorite__link:hover {
+  background-color: #eee;
+  color: #000;
+  
+}
+
+@keyframes opacpyAny {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
